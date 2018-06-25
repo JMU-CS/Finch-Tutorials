@@ -7,7 +7,7 @@ James Madison University STEM Day 2018
 
 ### 1. Overview
 
-In this activity you will learn the basics of the Python programming language by using it to program Finch robots. 
+In this activity you will learn the basics of the Python programming language by using it to program [Finch robots](https://www.finchrobot.com/). 
 
 ### 2. Getting Started
 
@@ -57,7 +57,7 @@ Ok, let's talk about each line of code in this program. The first is
 from finch import Finch
 ```
 
-It takes a lot of code for your computer to actually talk to the Finch. If we had to write all this code from scratch by ourselves, we would never be able to get anything done. Instead, people have already written a lot of the code for us, and we can _use_ their pre-existing code in our own program. This is called a code library, because it allows us to borrow code from other programmers in a similar way to borrowing a book from the library. That line says from the code library stored in the `finch.py` file, borrow the code for the base `Finch` program. Every one of our Finch programs will begin with this line.
+It takes a lot of code for your computer to actually talk to the Finch. If we had to write all this code from scratch by ourselves, we would never be able to get anything done. Instead, people have already written a lot of the code for us, and we can _use_ their pre-existing code in our own program. This is called a code library, because it allows us to borrow code from other programmers in a similar way to borrowing a book from the library. That line says `from` the code library stored in the `finch.py` file, borrow the code for the base `Finch` program. Every one of our Finch programs will begin with this line.
 
 The next line
 
@@ -83,9 +83,9 @@ Oh No! When we run the code above, you'll notice we get an angry red text in the
 
 ```
 NameError: name 'pidgeotto' is not defined
-'''
+```
 
-This is because our Finch is now named `hermione` and we did not assign anything to the name `pidgeotto`. In order to make this work, we have to replace all references to `pidgeotto` with references to `hermione`. 
+This is because our Finch is now named `hermione`, but we are still trying to refer to it with the name `pidgeotto`. In order to make this work, we have to replace all references to `pidgeotto` with references to `hermione`. 
 
 ```python 
 from finch import Finch
@@ -101,7 +101,7 @@ Also, note that assignments always place the name on the left. The following wou
 Finch() = hermione # This is backwards!!! New variable names go on the right of the '='
 ```
 
-Notice also that we have a __comment__ on this line, which is English text following a point sign '#'. The purpose of this is to allow us add comments on what a line of code is doing so that we can more easily remember how the code worked later. It's always important to __document__ your code by adding comments. In the code below, we will often add comments to help explain what its doing. 
+Notice also that we have a __comment__ on this line, which is English text following the hashtag symbol `#`. The purpose of this is to allow us add comments on what a line of code is doing so that we can more easily remember how the code worked later. It's always important to __document__ your code by adding comments. In the code below, we will often add comments to help explain what its doing. (If we did not proceed our explanations, written in english, with the `#`, then our program would have an error telling us that the english part is invalid python.)
 
 Finally, the last line of our program, which now reads 
 
@@ -109,7 +109,7 @@ Finally, the last line of our program, which now reads
 hermione.led(255, 0, 0) # Light up the Finch's nose red. 
 ```
 
-activates the LED lights inside the Finch's beak. The `.led(255,0,0)` following `hermione` on this line tells our program to run the `led` function with values of 255, 0, and 0 on the `hermione` Finch. 
+activates the <abbr title="Light-Emitting Diode, a kind of light">LED</abbr> lights inside the Finch's beak. The `.led(255,0,0)` following `hermione` on this line tells our program to run the `led` function with values of 255, 0, and 0 on the `hermione` Finch. 
 
 #### Puzzles 
 
@@ -138,9 +138,9 @@ hermione.led(255, 0, 0) # Turn hermy's beak red
 
 What's going on? Where's our blue beak? 
 
-Our program only has three main lines of code, turn beak red, turn beak blue, turn beak red. The problem is that lines of code like this execute so fast on a computer that there the leds don't have time to change from red to blue before the line of code changing it back to red has already executed. What we woudl really like to do is turn the beak read, then wait a second, then turn the beak blue, then wait a second, then turn it back to red. 
+Our program only has three main lines of code, turn beak red, turn beak blue, turn beak red. The problem is that lines of code like this execute so fast on a computer that the LEDs don't have time to change from red to blue before the line of code changing it back to red has already executed. What we would really like to do is turn the beak read, then wait a second, then turn the beak blue, then wait a second, then turn it back to red. 
 
-Fortunately, python has a little library for making a program wait for some amount of time before going to the next line of code. This is called sleeping the program, and is made available in the `time` library. Let's import the code for the `sleep` command from the `time` library and add some sleeping to our program. 
+Fortunately, python has a little library for making a program wait for some amount of time before going to the next line of code. This is called sleeping the program, and is made available in the `time` library. Let's `import` the code for the `sleep` command from the `time` library and add some sleeping to our program. 
 
 ```python
 from finch import Finch
@@ -155,7 +155,7 @@ sleep(1.0) # sleep this program for 1 second
 hermione.led(255,0,0) #red beak!
 ```
 
-Run the code to see what happens. We're going to make use of the `sleep` command in the next section. 
+Run the code to see what happens. We're also going to make use of the `sleep` command in the next section. 
 
 ### 5. Fly bird, fly!
 
