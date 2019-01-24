@@ -13,7 +13,9 @@ In this activity you will learn the basics of the Python programming language by
 
 #### Download the Dev-Environment
 
-Your __dev-environment__ is hacker speak for your "development environment", or the group of tools and apps you need to get started hacking your Finch robot. We've already set your laptop up to work with the Finch robot dev-environment, you just have to start it!
+Your __dev-environment__ is hacker speak for your "development environment", or the group of tools and apps you need to get started hacking your Finch robot. 
+
+Download and install your dev-environment by right clicking on [this link](https://w3.cs.jmu.edu/cs101/unit12/Lab12.zip), selecting "Save Link As", and saving the file (Lab12.zip) to the Desktop (you should see the Desktop on the left-hand side of the save dialog). 
 
 To do that, we're going to use a powerful tool called the __Terminal__. We won't learn about the Terminal much today, but its one of the ways elite coders control their computers to get things done quickly (once you know the Terminal, it is much more powerful than the mouse). 
 
