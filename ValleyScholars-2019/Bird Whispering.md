@@ -51,7 +51,7 @@ Ok, I'll do this once, but after this we're done with screenshots. Here's what i
 
 <img src="thonny-code.png" />
 
-Now click on the "run" button, which looks like a big green play button. Since we haven't saved this program before, `thonny` will ask us to save it. In order for our program to work correctly with our robot avians, we need to save our file in the same folder as the finch.py file, which is another program called a "Library" which has additional code for talking to the robot. We've placed this in the /home/student/FinchPython120/ folder. Navigate to this folder and save your program as `first_program.py`. 
+Now click on the "run" button, which looks like a big green play button. Since we haven't saved this program before, `thonny` will ask us to save it. In order for our program to work correctly with our robot avians, we need to save our file in the same folder as the finch.py file, which is another program called a "Library" which has additional code for talking to the robot. You need to save your file to the /home/student/Desktop/Lab12/ folder. Navigate to this folder and save your program as `first_program.py`. 
 
 Ok, let's talk about each line of code in this program. The first is
 
